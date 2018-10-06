@@ -323,7 +323,7 @@ textarea.form-control {
     flex-shrink: 0;
 }
 
-.form-checkbox input {
+.form-checkbox input:checked {
     background:url("../images/form_ok.jpg");
     background-position: center;
     background-repeat: no-repeat;
