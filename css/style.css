@@ -350,10 +350,11 @@ textarea.form-control {
 .article-box {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
-.article-box-img {
-
+.article-box:hover .article-box-bar {
+    opacity: 0;
 }
 
 .article-box-bar {
@@ -363,6 +364,8 @@ textarea.form-control {
     width: 100%;
     background: rgba(255, 255,255,0.6);
     padding: 15px;
+    opacity: 100%;
+    transition: 0.5s;
 }
 
 .article-box-title {
