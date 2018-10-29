@@ -205,30 +205,31 @@ color: var(--color);
 /* main banner */
 
 .main-banner-bg {
-    background: linear-gradient(#fefefe, #cccccc);
-
+    background: linear-gradient(#fefefe, #ccc);
 }
 
 .banner {
-    height: 500px;
+    height: 400px;
     display: flex;
+    padding-top:50px;
 }
 
 .banner-prev,
-.banner-next  {
+.banner-next {
     width: 85px;
     font-size: 80px;
-    border: 0;
+    color: var(--color);
+    border: none;
     background: none;
     outline: none;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .banner-prev:hover,
 .banner-next:hover {
     color: var(--color2);
 }
-
 
 .banner-next {
     order: 1;
@@ -239,18 +240,43 @@ color: var(--color);
     position: relative;
 }
 
+.banner-slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+    display: flex;
+}
+
 .banner-slide-active {
     opacity: 1;
     z-index: 1;
 }
 
+.banner-img {
+    min-width: 400px;
+}
 
-.banner-slide {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: 1s;
+.banner-content {
+    width: auto;
+    text-align: center;
+}
+
+.banner-title {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.banner-title span {
+    color: var(--color);
+}
+
+.banner-text {
+    margin-bottom: 20px;
 }
 
 /* formularz */
